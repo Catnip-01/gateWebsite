@@ -1,0 +1,146 @@
+.question {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.options .option {
+    display: flex;
+}
+
+.option .option-button {
+
+    flex: 1;
+    padding: 5px;
+    margin: 10px;
+    height: 4vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.05s ease-in;
+    margin-left: 3vw;
+    margin-left: 3vw;
+    border-radius: 15px;
+    border: solid black 1px;
+}
+
+.option-description {
+    display: flex;
+    flex: 30;
+    text-align: left;
+    align-items: center;
+}
+
+
+.option .option-button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    border: black solid 2px;
+}
+
+.answerToggle {
+
+    padding: 5px;
+    margin: 10px;
+    height: 4vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.05s ease-in;
+    margin-left: 3vw;
+    margin-left: 3vw;
+    border-radius: 15px;
+    border: solid black 1px;
+
+}
+
+.answerToggle:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    border: black solid 2px;
+}
+
+.answer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+}
+
+.opt-img{
+    width: 250px;
+    height: 250px;
+}
+
+body {
+    padding: 0px;
+    margin: 10px;
+}
+
+
+
+nav {
+    background-color: #262626;
+    border: solid black 1px;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    border: solid #d8b468 3px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #262626;
+    border-radius: 5px;
+    text-align: center;
+}
+
+li:hover {
+    background-color: #d8b468;
+    cursor: pointer;
+    border-color: #262626;
+
+}
+
+li:hover>a {
+    color: #262626;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+
+}
+
+ul>li {
+    flex: 1;
+    position: relative;
+}
+
+ul>li>a {
+    text-decoration: none;
+}
+
+ul>li>ul.dropdown li {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+ul>li>ul.dropdown {
+    display: none;
+    position: absolute;
+    width: 20vw;
+
+}
+
+ul>li:hover>ul.dropdown {
+    display: block;
+
+}
+
+ul a {
+    color: #d8b468;
+}
